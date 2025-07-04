@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3e269c-02e4-45ca-9326-0a45180f74cd" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../Python/Mooc/main.py" afterDir="false" />
@@ -11,9 +14,7 @@
       <change afterPath="$PROJECT_DIR$/../testing/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testing/.idea/testing.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testing/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional_tests/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/functional_tests/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Static/Styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../database.db" beforeDir="false" />
