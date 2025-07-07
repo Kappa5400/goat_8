@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-d19a5nlh!%q-xxh6#guvn+=te1rns)o^yj2v+3_mgehdav2srv"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+
+if "DJANGO_DEBUG_FALSE" in os.environ:
+    DEBUG = False
+    SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
+else:
+    DEBUG = True
+    SECRET_KEY = 'insecure-key-for-dev'
 
 ALLOWED_HOSTS = []
 

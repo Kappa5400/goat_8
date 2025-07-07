@@ -3,13 +3,14 @@ FROM python:3.12-slim
 RUN python -m venv /venv
 ENV PATH="/venv/bin:$PATH:"
 
-RUN pip install "django" gunicorn whitenoise
-RUN pip install "cssselect"
-RUN pip install "lxml"
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 COPY src /src
 
 WORKDIR /src
+
+ENV DJANGO_DEBUG_FALSE=1
 
 CMD ["gunicorn", "--bind", ":8888", "superlists.wsgi:application"]
 
